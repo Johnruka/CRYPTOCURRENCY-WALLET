@@ -1,6 +1,7 @@
 package se.lexicon.Impl;
 
 
+import org.springframework.stereotype.Component;
 import se.lexicon.Dao.WalletDao;
 import se.lexicon.model.Wallet;
 
@@ -8,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-
+@Component
 public class WalletDaoImpl implements WalletDao {
 
     private List<Wallet> storage;
